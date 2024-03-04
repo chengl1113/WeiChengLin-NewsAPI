@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsGalleryFragment2">
+    <fragment
+        android:id="@+id/newsGalleryFragment2"
+        android:name="com.example.weichenglin_simplenewsapp.NewsGalleryFragment"
+        android:label="NewsGalleryFragment"
+        tools:layout="@layout/fragment_news_gallery">
+        <action
+            android:id="@+id/show_news_detail"
+            app:destination="@id/news_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/news_detail"
+        android:name="com.example.weichenglin_simplenewsapp.NewsDetailFragment"
+        android:label="NewsDetailFragment"
+        tools:layout="@layout/fragment_news_detail">
+        <argument android:name="news_title" app:nullable="true" />
+        <argument android:name="news_image_url" app:nullable="true"/>
+        <argument android:name="news_content" app:nullable="true"/>
+    </fragment>
+</navigation>

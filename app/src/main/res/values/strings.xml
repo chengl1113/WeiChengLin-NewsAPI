@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeiChengLin-SimpleNewsApp</string>
+    <string-array name="categories_array">
+        <item>ALL</item>
+        <item>BUSINESS</item>
+        <item>Entertainment</item>
+        <item>GENERAl</item>
+        <item>HEALTH</item>
+        <item>SCIENCE</item>
+        <item>SPORTS</item>
+        <item>TECHNOLOGY</item>
+    </string-array>
+</resources>
